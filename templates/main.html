@@ -1,0 +1,93 @@
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Truda</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Orbitron:wght@400..900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'css/main.css' %}">
+</head>
+<body>
+    <div class="cent">
+    <h1>truda</h1>
+    <br>
+    <br>
+    </div>
+    <div class="contbox">
+        <div class="box">
+            <p id="display"></p>
+                  
+        </div>
+
+    </div>
+    <br>
+    
+    <div class="botts">
+        <form id="gettruth" method="get">
+            {% csrf_token %}
+            <div class=" truclass">
+                <button type="submit" name="truth" class="trubot" > &#127917; <br><br> TRUTH</button>
+            </div>
+        </form>
+        <form id="getdare" method="get">
+            {% csrf_token %}
+            <button type="submit" name="dare" class="darebot"> &#9876; <br><br> DARE</button>
+
+        </form>
+        <br>
+        <a href="accounts/logout"><button type="button" name="logout" class="logbot"> LOG OUT</button></a>
+    </div>
+ 
+    <script>
+        $(document).on('submit','#gettruth',function(e){
+
+            e.preventDefault();
+            
+            $.ajax({
+                type: 'GET',
+                url: "{% url 'getruth' %}",
+                success: function(response){
+                    console.log(response)
+                    $("#display").empty();
+                    
+                        var temp="<p>"+ response.truth['truth'] +"</p>";
+                        $("#display").append(temp);
+                    
+                    
+                },
+                error: function(response){
+                    alert("an error occured")
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).on('submit','#getdare',function(e){
+ 
+            e.preventDefault();
+            
+            $.ajax({
+                type: 'GET',
+                url: "{% url 'getdare' %}",
+                success: function(response){
+                    console.log(response)
+                    $("#display").empty();
+                    
+                        var temp="<p>"+ response.dare['dare'] +"</p>";
+                        $("#display").append(temp);
+                    
+                    
+                },
+                error: function(response){
+                    alert("an error occured")
+                }
+        
+            });
+           });
+    </script>
+
+</body>
+</html>

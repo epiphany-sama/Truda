@@ -1,0 +1,149 @@
+body{
+    background-color: rgb(29, 43, 46);
+    color: white;
+    font-family: 'merienda';
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.cent h1{
+    letter-spacing: 10px;
+    font-size: 50px;
+    font-family: 'orbitron';
+    text-transform: uppercase;
+}
+
+p{
+    font-size: x-large;
+}
+
+.cent{
+    text-align: center;
+}
+
+.contbox{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 300px;
+    border: 1px;
+    background: linear-gradient( to right, rgb(18, 23, 26),rgb(42, 72, 82));
+    border-radius: 20px ;
+    box-shadow: 12px 12px 32px rgba(0, 0, 0, 0.842), -10px -12px 32px rgba(255, 255, 255, 0.205);
+}
+
+.contbox .box{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: small;
+}
+
+.botts{
+    text-align: center;
+}
+
+form{
+    display: inline;
+}
+
+.truclass{
+    display: inline;
+    text-align: center;
+    padding-right: 20px;
+}
+
+.trubot{
+    font-size: large;
+    font-family: 'Rajdhani';
+    color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient( to right, rgb(18, 23, 26),rgb(42, 72, 82));
+    box-shadow: 12px 12px 32px rgba(0, 0, 0, 0.842), -10px -12px 32px rgba(255, 255, 255, 0.205);
+}
+
+.darebot{
+    font-size: large;
+    font-family: 'Rajdhani';
+    color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient( to right, rgb(18, 23, 26),rgb(42, 72, 82));
+    box-shadow: 12px 12px 32px rgba(0, 0, 0, 0.842), -10px -12px 32px rgba(255, 255, 255, 0.205);
+}
+
+.logbot{
+    margin-top: 10px;
+    font-size: large;
+    font-family: 'Rajdhani';
+    color: white;
+    width: 150px;
+    height: 70px;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient( to right, rgb(18, 23, 26),rgb(42, 72, 82));
+    box-shadow: 12px 12px 32px rgba(0, 0, 0, 0.842), -10px -12px 32px rgba(255, 255, 255, 0.205);
+}
+
+.trubot:hover{
+    background-color: aliceblue;
+}
+
+
+
+
+@media screen and (max-width: 680px) {
+    
+    .contbox{
+        margin-right: auto;
+        margin-left: auto;
+        width: 250px;
+        height: 200px;
+    }
+
+    .cent h1{
+        font-size: 35px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    .contbox .box{
+        padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 7px;
+    }
+
+    .truclass{
+        display: inline;
+        text-align: center;
+    }
+    .trubot{
+        font-size: 15px;
+        width: 100px;
+        height: 60px;
+    }
+    .darebot{
+        font-size: 15px;
+        width: 100px;
+        height: 60px;
+    }
+    
+    .logbot{
+      font-size: 11px;
+      width: 80px;
+      height: 40px;
+    }
+}

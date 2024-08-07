@@ -1,0 +1,139 @@
+body{
+    background-color: rgb(23, 43, 46);
+    color: white;
+    font-family: 'merienda', cursive;
+    padding-left: 20px;
+}
+
+h1{
+    font-size: 50px;
+    font-family: 'Rajdhani';
+    text-transform: capitalize;
+    font-style: italic;
+    text-align: center;
+}
+
+h3{
+    color: rgba(255, 0, 0, 0.616);
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cont{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.formclass{
+    width: 30em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+h4{
+    text-transform: capitalize;
+    margin-bottom: -10px;
+    font-size: large;
+    text-align: left;
+}
+
+p{
+    text-align: left;
+}
+
+.line{
+    border: 1px rgba(255, 255, 255, 0.253) solid;
+    border-radius: 10px;
+}
+.sames{
+    
+    color: white;
+    width: 30rem;
+    height: 50px;
+    border-radius: 7px;
+    border: none;
+    text-align: center;
+    font-family: 'Rajdhani';
+    font: bolder;
+    font-size: x-large;
+    box-shadow: 12px 12px 32px rgba(0, 0, 0, 0.842), -10px -12px 32px rgba(255, 255, 255, 0.205);
+    background: linear-gradient( to right, rgb(18, 23, 26),rgb(42, 72, 82));
+}
+
+.signbot{
+    color: white;
+    font-size: x-large;
+    width: 20rem;
+    border: none;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.582);
+    border : outset 1px grey;
+    font-family: 'Rajdhani';
+}
+
+
+
+
+
+.c1{
+    margin-bottom: 20px;
+}
+
+.c2{
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 680px) {
+    h1{
+        font-size: 30px;
+    }
+
+    h4{
+        font-size: 9px;
+    }
+
+    h3{
+        font-size: 15px;
+    }
+
+    p{
+        font-size: 9px;
+    }
+    
+    .line{
+        width: 220px;
+    }
+
+    .signbot{
+        width: 150px;
+        font-size: large;
+    }
+
+
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .cont{
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+    
+    .formclass{
+        width: 220px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sames{
+        font-size: medium;
+        width: 220px;
+    }
+}
